@@ -6,12 +6,29 @@
     <title>Nhóm 8</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="star.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.khung').forEach(khung => {
+        khung.addEventListener('click', function() {
+            console.log("Element clicked!");  // Thêm dòng này để kiểm tra
+            if (!khung.classList.contains('fullscreen')) {
+                khung.classList.add('fullscreen');
+            } else {
+                khung.classList.remove('fullscreen');
+            }
+        });
+    });
+});
+
+</script> 
+
+
 </head>
 <body>
     <h1>GIỚI THIỆU THÀNH VIÊN NHÓM 8</h1>
     <div class="bao">
     <div class="khung">
-        <h2>Thành viên thứ nhất</h2>
+        <h2 class="tv">Thành viên thứ nhất</h2>
         <img src="bao.jpg" alt="ok" class="avt">
         <div class="thongtin">
             <p><strong>Tên:</strong> Phạm Ngọc Gia Bảo</p>
@@ -19,6 +36,8 @@
             <p><strong>Lớp:</strong> 12T</p>
             <p><strong>Trường:</strong> THPT chuyên Nguyễn Đình Chiểu</p>
             <p><strong>Đội tuyển:</strong> Toán</p>
+
+
             <div class="thanhtich">
                 <h2>Thành tích đạt được</h2>
                 <div>
@@ -37,16 +56,16 @@
                     </div>      
                 </div>
         </div>
-       
-        </div>
         <div class="social">
             <a href="https://www.facebook.com/kyrA67" target="blank_"><img class="social_icon" src="Facebook.png"  alt=""></a>
             <a href="https://www.instagram.com/kenkazuma_/" target="blank_"><img class="social_icon"src="Instagram.png"  alt=""></a>
             <a href="https://www.youtube.com/@ozuma5833" target="blank_"><img class="social_icon"src="Youtube.png" alt=""></a>
         </div>
+        </div>
+        
     </div>
     <div class="khung">
-        <h2>Thành viên thứ hai</h2>
+        <h2 class="tv">Thành viên thứ hai</h2>
         <img src="Cuong.jpg" alt="ok" class="avt">
         <div class="thongtin">
             <p><strong>Tên:</strong> Nguyễn Mạnh Cường</p>
@@ -54,6 +73,9 @@
             <p><strong>Lớp:</strong> 12L</p>
             <p><strong>Trường:</strong> THPT chuyên Nguyễn Đình Chiểu</p>
             <p><strong>Đội tuyển:</strong> Vật Lý</p>
+            
+            <p></p>
+            <p></p>
             <div class="thanhtich">
                 <h2>Thành tích đạt được</h2>
                 <div>
@@ -72,18 +94,19 @@
                     </div>      
                 </div>
             </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100075455332046" target="blank_"><img class="social_icon" src="Facebook.png" alt="" ></a>
+                <a href="https://www.instagram.com/cuon.gnguyen2809/" target="blank_"><img class="social_icon" src="Instagram.png" alt="" target="blank_"></a>
+                <a href="https://www.youtube.com/@chulaye-em" target="blank_"><img class="social_icon" src="Youtube.png" alt="" target="blank_"></a>
+            </div>
         </div>
         
-        <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=100075455332046" target="blank_"><img class="social_icon" src="Facebook.png" alt="" ></a>
-            <a href="https://www.instagram.com/cuon.gnguyen2809/" target="blank_"><img class="social_icon" src="Instagram.png" alt="" target="blank_"></a>
-            <a href="https://www.youtube.com/@chulaye-em" target="blank_"><img class="social_icon" src="Youtube.png" alt="" target="blank_"></a>
-        </div>
+        
     </div>
 </div>
-<div class="groupb"><button><a href="https://www.youtube.com/watch?v=2bkB2yHtD6U" target="blank_">TIMELAPSE VIDEO</a></button>
-    <button><a href="https://github.com/baoozuma/Webnhom8.git" target="blank_">SOURCE CODE</a></button>
-    <button><a href="https://www.youtube.com/watch?v=70466-ILw0Y&feature=youtu.be" target="blank_">AI PROJECT</a></button></div>
+<div class="groupb"><a href="https://www.youtube.com/watch?v=2bkB2yHtD6U" target="blank_">TIMELAPSE VIDEO</a>
+    <a href="https://github.com/baoozuma/Webnhom8.git" target="blank_">SOURCE CODE</a>
+    <a href="https://www.youtube.com/watch?v=70466-ILw0Y&feature=youtu.be" target="blank_">AI PROJECT</a></div>
 
 
 <div class="bg"></div>

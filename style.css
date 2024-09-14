@@ -13,18 +13,24 @@
     
 }
 .social {
+    margin-top: 1vw;
+  width: auto;
     display: flex;
-    gap: 2vw;
+    gap: 5vw;
     align-items: center;
     opacity: 0;
+
     transition: all 0.3s;
+    justify-content: center;
 }
 .avt {
+  transition: all 0.3s;
     width: 10vw;
     height: 10vw;
     border: solid;
     border-color: rgb(228, 247, 175);
     border-width: 0.15vw;
+    
 }
 .khung {
     border-radius: 1vw;
@@ -38,12 +44,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     width: 30vw;
+    height: 40vw;
     transition: all 0.3s;
 }
 .khung:hover{
     scale: 1.05;
-
+  height: 42vw;
   box-shadow: 0 10px 20px rgba(195, 255, 0, 0.4);
 }
 .khung:hover .social {
@@ -130,7 +138,7 @@ html {
     z-index: -1;
   }
 
-button {
+.groupb a{
     margin:5vw 10vw ;
     width: 11vw;
     height: 7vw;
@@ -139,13 +147,17 @@ button {
     border: solid;
     border-width: 0.15vw;
     color: rgb(228, 247, 175);
+    align-content: center;
+    text-align: center;
 }
-button:hover {
+.groupb a:hover {
     scale: 1.1;
     box-shadow: 0 10px 20px rgba(195, 255, 0, 0.4);
 }
-a {
+.groupb a {
     text-decoration: none;
+    width: 11vw;
+    height: 7vw;
 }
 button a {
     color: rgb(228, 247, 175);
@@ -162,4 +174,45 @@ footer {
     background-color: rgb(29, 1, 47);
     color: rgb(228, 247, 175);
     font-size: 2vw;
+}
+.fullscreen {
+  width: 96vw;
+  position: absolute;
+  top: 0;
+  left: 0.3%;
+  z-index: 999;
+  background-color: black;
+  height: 70vw;
+  transition: all 0.3s;
+
+}
+.fullscreen p,
+.fullscreen strong, 
+.fullscreen h2{
+  font-size: 1.8vw;
+  line-height: 2vw;
+}
+.fullscreen {
+  flex-direction: row;
+  gap: 2vw;
+}
+.fullscreen .tv {
+  display: none;
+}
+.fullscreen .social {
+  display: flex;
+}
+.fullscreen:hover {
+  scale: 1;
+  height: 70vw;
+}
+.fullscreen .avt {
+  width: 35vw;
+  height: 35vw;
+}
+.bonus {
+  display: none;
+}
+.fullscreen .bonus {
+  display: block;
 }
