@@ -142,6 +142,7 @@ button {
 }
 button:hover {
     scale: 1.1;
+    box-shadow: 0 10px 20px rgba(195, 255, 0, 0.4);
 }
 a {
     text-decoration: none;
@@ -151,7 +152,7 @@ button a {
 }
 .groupb {
     display: flex;
-    gap: 3vw;
+    
 }
 footer {
     padding-top: 2vw;
